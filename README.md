@@ -1,2 +1,3 @@
-# buddy-seller
-BuddyBuyer's seller system
+![](cover.png)
+
+# BuddyBuyer's seller system
