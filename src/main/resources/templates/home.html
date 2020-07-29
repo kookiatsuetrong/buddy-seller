@@ -1,5 +1,32 @@
-<form method="post">
-	<input name="topic">
-	<textarea name="detail"></textarea>
-	<button>Send</button>
+<#include "header.html">
+<form method="post" enctype="multipart/form-data">
+	<h3>กรอกรายละเอียดสินค้าที่ต้องการขาย</h3>
+	<input name="topic"
+		   placeholder="ชื่อสินค้า"
+		   required
+		   autofocus
+		   class="form-control" />
+	<textarea name="price"
+			  placeholder="ราคาขายปลีก ราคาขายส่ง"
+			  class="form-control"
+			  >ราคาขาย เช่น 1 ชิ้นราคา 200 บาท, ซื้อ 3 ชิ้น เพียง 500 บาท</textarea>
+	<textarea name="detail"
+			  placeholder="รายละเอียดสินค้า"
+			  class="form-control"
+			  rows="6"
+			  ></textarea>
+	<input type="file" name="photo" multiple />
+	<br/>
+	<button class="btn btn-primary">Send</button>
 </form>
+<style>
+	form {
+		max-width: 480px;
+		margin: 0 auto;
+		padding-top: 0.5rem;
+	}
+	form > * {
+		margin-bottom: 0.5rem;
+	}
+</style>
+<#include "footer.html">
